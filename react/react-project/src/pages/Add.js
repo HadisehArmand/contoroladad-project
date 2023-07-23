@@ -3,7 +3,7 @@ import axios from "axios";
 import Edit from "./Edit";
 import { Link } from "react-router-dom";
 import SetAction from "../addLogsys";
-import getUser from "../refresh";
+import getUser from "../getUser";
 
 class Add extends React.Component {
     constructor(props) {

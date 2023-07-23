@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 import SetAction from "../addLogsys";
-import getUser from "../refresh";
+import getUser from "../getUser";
 class Edit extends React.Component {
   constructor(props) {
     super(props);

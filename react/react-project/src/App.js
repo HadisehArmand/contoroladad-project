@@ -1,8 +1,8 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Main from "./pages/Main";
+import Main from "./pages/Login";
 import View from "./pages/View";
-import Login from "./pages/Login";
+import Login from "./pages/Main";
 import Add from "./pages/Add";
 import Sigin from "./pages/Sigin";
 import Log from "./pages/Log";

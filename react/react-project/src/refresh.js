@@ -1,14 +1,16 @@
-import axios from "axios";
-import SetAction from "./addLogsys";
 
-function getUser() {
-    axios.get(`https://64b53279f3dbab5a95c6e9e2.mockapi.io/api/v1/user/`)
-    .then(res => {
-       const persons = res.data;
-       localStorage.setItem("users", JSON.stringify(persons));
-       console.log("done")
-       SetAction("fetech User", "ok")
-    })
+
+ 
+ function add_admin(){
+   let isloginstatus = localStorage.getItem("islogin");
+   if (isloginstatus === null) {
+      localStorage.setItem("islogin",false);
+   }else{
+      localStorage.setItem("islogin", localStorage.getItem("islogin"));
+   }
+   localStorage.setItem("admin-username", "admin@admin.com");
+   localStorage.setItem("admin-password", "12345@");
+  
  }
 
- export default getUser;
+ export default add_admin;

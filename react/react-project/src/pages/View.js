@@ -1,6 +1,6 @@
 import React from "react";
 import SetAction from "../addLogsys";
-import getUser from "../refresh";
+import getUser from "../getUser";
 class View extends React.Component {
     constructor(props) {
         super(props)
